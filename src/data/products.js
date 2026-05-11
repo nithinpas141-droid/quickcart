@@ -1,0 +1,68 @@
+const products = [
+  {
+    id: 1,
+    name: 'Everyday Backpack',
+    category: 'Accessories',
+    price: '$49',
+    description: 'A durable pack for daily adventures with padded straps and laptop protection.',
+    image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 2,
+    name: 'Wireless Earbuds',
+    category: 'Electronics',
+    price: '$79',
+    description: 'Comfortable true wireless earbuds with long battery life and crisp sound.',
+    image: 'https://images.unsplash.com/photo-1512499617640-c2f999d4d2ca?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 3,
+    name: 'Classic Sneakers',
+    category: 'Footwear',
+    price: '$69',
+    description: 'Lightweight sneakers with subtle style and everyday comfort.',
+    image: 'https://images.unsplash.com/photo-1528701800487-2764f5a79d0e?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 4,
+    name: 'Ceramic Mug Set',
+    category: 'Home',
+    price: '$34',
+    description: 'Set of four modern ceramic mugs for coffee, tea, and cozy mornings.',
+    image: 'https://images.unsplash.com/photo-1511688878354-4e8d2997463d?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 5,
+    name: 'Bluetooth Speaker',
+    category: 'Audio',
+    price: '$99',
+    description: 'Portable speaker with bold stereo sound and water-resistant design.',
+    image: 'https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 6,
+    name: 'Scented Candle',
+    category: 'Lifestyle',
+    price: '$22',
+    description: 'A calming soy candle with a warm citrus and cedarwood fragrance.',
+    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 7,
+    name: 'Travel Journal',
+    category: 'Stationery',
+    price: '$18',
+    description: 'A compact notebook with dotted pages for planning and journaling.',
+    image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    id: 8,
+    name: 'Smart Water Bottle',
+    category: 'Fitness',
+    price: '$39',
+    description: 'Hydration reminder bottle with a sleek finish and spill-resistant lid.',
+    image: 'https://images.unsplash.com/photo-1556911073-52527ac437e3?auto=format&fit=crop&w=900&q=80',
+  },
+];
+
+export default products;
