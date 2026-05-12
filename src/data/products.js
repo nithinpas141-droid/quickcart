@@ -1,52 +1,71 @@
 const products = [
   {
     id: 1,
-    name: 'Everyday Backpack',
-    category: 'Accessories',
-    price: 49,
-    description: 'A durable pack for daily adventures with padded straps and laptop protection.',
-    image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80',
+    name: 'Wireless Headphones',
+    description: 'High-quality wireless headphones with noise cancellation',
+    price: 199.99,
+    category: 'Electronics',
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500'
   },
   {
     id: 2,
-    name: 'Wireless Earbuds',
+    name: 'Smart Watch',
+    description: 'Fitness tracking smartwatch with heart rate monitor',
+    price: 299.99,
     category: 'Electronics',
-    price: 79,
-    description: 'Comfortable true wireless earbuds with long battery life and crisp sound.',
-    image: 'https://images.unsplash.com/photo-1512499617640-c2f999d4d2ca?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500'
   },
   {
     id: 3,
-    name: 'Classic Sneakers',
-    category: 'Footwear',
-    price: 69,
-    description: 'Lightweight sneakers with subtle style and everyday comfort.',
-    image: 'https://images.unsplash.com/photo-1528701800487-2764f5a79d0e?auto=format&fit=crop&w=900&q=80',
+    name: 'Running Shoes',
+    description: 'Comfortable running shoes for all terrains',
+    price: 129.99,
+    category: 'Sports',
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500'
   },
   {
     id: 4,
-    name: 'Ceramic Mug Set',
+    name: 'Coffee Maker',
+    description: 'Automatic drip coffee maker with programmable timer',
+    price: 89.99,
     category: 'Home',
-    price: 34,
-    description: 'Set of four modern ceramic mugs for coffee, tea, and cozy mornings.',
-    image: 'https://images.unsplash.com/photo-1511688878354-4e8d2997463d?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500'
   },
   {
     id: 5,
-    name: 'Bluetooth Speaker',
-    category: 'Audio',
-    price: 99,
-    description: 'Portable speaker with bold stereo sound and water-resistant design.',
-    image: 'https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=900&q=80',
+    name: 'Laptop Backpack',
+    description: 'Water-resistant backpack with laptop compartment',
+    price: 79.99,
+    category: 'Accessories',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500'
   },
   {
     id: 6,
-    name: 'Scented Candle',
-    category: 'Lifestyle',
-    price: 22,
-    description: 'A calming soy candle with a warm citrus and cedarwood fragrance.',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80',
+    name: 'Yoga Mat',
+    description: 'Non-slip yoga mat with carrying strap',
+    price: 39.99,
+    category: 'Sports',
+    image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500'
   },
+  {
+    id: 7,
+    name: 'Bluetooth Speaker',
+    description: 'Portable wireless speaker with 12-hour battery',
+    price: 59.99,
+    category: 'Electronics',
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500'
+  },
+  {
+    id: 8,
+    name: 'Desk Lamp',
+    description: 'LED desk lamp with adjustable brightness',
+    price: 49.99,
+    category: 'Home',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500'
+  }
+];
+
+export default products;
   {
     id: 7,
     name: 'Travel Journal',

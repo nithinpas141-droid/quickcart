@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
 import '../styles/CartSidebar.css';
 
-function CartSidebar({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem }) {
-  const calculateTotal = () => {
-    return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
-  };
+function CartSidebar() {
+  const { cart, isCartOpen, updateQuantity, removeFromCart, toggleCart, getTotalPrice } = useCart();
 
   return (
-    <div className={`cart-sidebar ${isOpen ? 'open' : ''}`}>
+    <div className={`cart-sidebar ${isCartOpen ? 'open' : ''}`}>
       <div className="cart-header">
         <h2>Your Cart</h2>
-        <button onClick={onClose} className="close-btn" aria-label="Close cart">
+        <button onClick={toggleCart} className="close-btn" aria-label="Close cart">
           ✕
         </button>
       </div>
@@ -30,7 +30,7 @@ function CartSidebar({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem }) 
               <div className="cart-item-quantity">
                 <button 
                   className="quantity-btn"
-                  onClick={() => onUpdateQuantity(item.id, item.quantity - 1)}
+                  onClick={() => updateQuantity(item.id, item.quantity - 1)}
                   aria-label="Decrease quantity"
                 >
                   −
@@ -38,7 +38,7 @@ function CartSidebar({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem }) 
                 <span className="quantity-display">{item.quantity}</span>
                 <button 
                   className="quantity-btn"
-                  onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}
+                  onClick={() => updateQuantity(item.id, item.quantity + 1)}
                   aria-label="Increase quantity"
                 >
                   +
@@ -47,7 +47,7 @@ function CartSidebar({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem }) 
               
               <button 
                 className="remove-btn"
-                onClick={() => onRemoveItem(item.id)}
+                onClick={() => removeFromCart(item.id)}
                 aria-label="Remove item"
               >
                 🗑️
@@ -61,9 +61,11 @@ function CartSidebar({ isOpen, onClose, cart, onUpdateQuantity, onRemoveItem }) 
         <div className="cart-footer">
           <div className="cart-total">
             <span>Total:</span>
-            <span className="total-amount">${calculateTotal().toFixed(2)}</span>
+            <span className="total-amount">${getTotalPrice().toFixed(2)}</span>
           </div>
-          <button className="checkout-btn">Checkout</button>
+          <Link to="/cart" className="view-cart-btn" onClick={toggleCart}>
+            View Cart
+          </Link>
         </div>
       )}
     </div>
